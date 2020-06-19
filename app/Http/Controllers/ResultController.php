@@ -46,8 +46,7 @@ class ResultController extends Controller
                 $query->select(DB::raw(1))
                     ->from('votes')
                     ->whereRaw('votes.candidate_id = candidates.id')
-                    ->where('votes.election_id', '=', $election->id)
-                    ->groupBy('candidates.id', 'candidates.name');
+                    ->where('votes.election_id', '=', $election->id);
            })
            ->get();
             dd($candidates);
