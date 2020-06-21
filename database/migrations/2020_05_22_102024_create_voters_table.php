@@ -15,10 +15,9 @@ class CreateVotersTable extends Migration
     {
         Schema::create('voters', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
             $table->integer('elecion_id');
             $table->bigInteger('cnic')->unique();
-            $table->string('email')->unique();
-            $table->string('password');
             $table->timestamps();
         });
     }
