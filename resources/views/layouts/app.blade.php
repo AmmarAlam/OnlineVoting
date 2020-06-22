@@ -26,6 +26,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="{{asset('img/vote.png')}}" width="50" > <strong>Online Voting</strong>
                 </a>
+                <a href="{{route('register')}}">Register</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
