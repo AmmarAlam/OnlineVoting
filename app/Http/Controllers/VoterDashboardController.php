@@ -76,6 +76,7 @@ class VoterDashboardController extends Controller
         ->join('candidates', 'candidates.election_id', '=', 'voters.election_id')
         ->select('candidates.id', 'candidates.name', 'candidates.description')
         ->where('users.id', '=', $userId)
+        ->orderBy('id', 'asc')
         ->get();
 
         $voterExists = DB::table('voters')
