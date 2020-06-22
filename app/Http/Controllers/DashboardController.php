@@ -14,6 +14,6 @@ class DashboardController extends Controller
         $voters =  DB::table('voters')->count();
         $results =  DB::table('votes')->count();
 
-        return view('admin.dashboard.index', compact('elections',$elections ,'candidates', $candidates,'voters', $voters, 'results', $results));
+        return view('admin.dashboard.index', compact('elections','candidates','voters', 'results'));
     }
 }

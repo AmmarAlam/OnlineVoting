@@ -17,8 +17,7 @@ class CreateCandidatesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('description')->nullable();
-            $table->unsignedBigInteger('election_id');
-            $table->foreign('election_id')->references('id')->on('votes');
+            $table->integer('election_id');
             $table->timestamps();
         });
     }
