@@ -42,7 +42,7 @@
             <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5 font-large-1"></i></a></li>
             <li class="nav-item">
                 <a href="#" class="navbar-brand nav-link">
-                <h4 class="orange text-bold-600">Online Voting</h4>
+                <h4 class="orange text-bold-600">Blockchain Voting</h4>
                 {{-- <img  alt="branding logo" class="brand-logo"> --}}
                 </a>
             </li>

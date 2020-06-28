@@ -37,6 +37,7 @@
                             <th>Title</th>
                             <th>Voting Date</th>
                             <th>Description</th>
+                            <th>Created Date</th>
                             <th>Options</th>
                           </tr>
                       </thead>
@@ -46,6 +47,7 @@
                           <td>{{$election->title}}</td>
                           <td>{{$election->voting_date}}</td>
                           <td>{{$election->description}}</td>
+                          <td>{{$election->created_at->format('l j/F/Y')}}</td>
                           <td>
                             <a href="{{url('/election/'.$election->id.'/edit')}}" class="btn btn-primary btn-sm">Edit</a>
                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">Delete</button>

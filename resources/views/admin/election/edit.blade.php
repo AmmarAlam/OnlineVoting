@@ -48,8 +48,9 @@
                             <div class="form-group">
                               <label>Status</label>
                               <select name="status" class="form-control">
-                                <option value="0" {{$election->status == 0 ? 'selected':''}}>Stop</option>
-                                <option value="1" {{$election->status == 1 ? 'selected':''}}>Start</option>
+                                <option value="0" {{$election->status == 0 ? 'selected':''}}>Stop session</option>
+                                <option value="1" {{$election->status == 1 ? 'selected':''}}>Start session</option>
+                                <option value="2" {{$election->status == 2 ? 'selected':''}}>Voting date</option>
                               </select>
                             </div>
                             <div class="form-group">

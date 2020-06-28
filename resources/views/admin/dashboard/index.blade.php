@@ -81,15 +81,12 @@
             </div>
           </div>
           <!--/ stats -->
-        {{-- <div class="row">
-            <div class="col-xl-4">
-                <input type="text" class="form-contorl"> 
-            </div>
-        </div> --}}
           <div class="row">
               <div class="col-xl-12 col-lg-12">
                   <div class="card">
-                    <div id="chartdiv"><input type="text" class="form-contorl"></div>
+                    {{-- <div id="chartdiv"></div> --}}
+                    {!! $chart->container() !!}
+                    {!! $chart->script() !!}
                   </div>
               </div>
           </div>

@@ -27,14 +27,14 @@
                         @if (!$voterExists)
                         <p class="font-medium-1">{{$election->description}}</p>
                         <a href="{{url('/castyourvote')}}" class="btn btn-info mt-2">Cast your vote</a>
-                        {{-- @elseif($election->status == '0') --}}
-                        {{-- <p class="font-medium-1">Voting session will start on {{$election->voting_date}}</p> --}}
                         @else
                         <p class="font-medium-1">You have been casted your vote</p>
                         <a href="{{url('/verifyyourvote')}}" class="btn btn-info mt-2">Verify your vote</a>
                         @endif
-                      @else
+                      @elseif($electionStatus->status == '0')
                         <p class="font-medium-1">Voting session has been end</p>
+                      @else
+                        <p class="font-medium-1">Voting session will be start on {{$electionStatus->voting_date->format('l j/F/Y')}}</p>
                       @endif
 
                     </div>

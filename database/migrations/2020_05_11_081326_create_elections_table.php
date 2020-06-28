@@ -18,7 +18,7 @@ class CreateElectionsTable extends Migration
             $table->string('title');
             $table->string('voting_date')->nullable();
             $table->string('description')->nullable();
-            $table->string('status')->default(0);
+            $table->string('status')->default(2);
             $table->timestamps();
         });
     }

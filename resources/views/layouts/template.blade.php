@@ -62,7 +62,7 @@
             <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5 font-large-1"></i></a></li>
             <li class="nav-item">
               <a href="#" class="navbar-brand nav-link">
-                <h4 class="orange text-bold-600">Online Voting</h4>
+                <h4 class="orange text-bold-600">Blockchain Voting</h4>
                 {{-- <img  alt="branding logo" class="brand-logo"> --}}
               </a>
             </li>
@@ -78,7 +78,7 @@
             <ul class="nav navbar-nav float-xs-right">
               <li class="dropdown dropdown-user nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link"><span class="avatar avatar-online"><img src="{{asset('assets/app-assets/images/portrait/small/avatar-s-1.png')}}" alt="avatar"><i></i></span><span class="user-name">Election Authority</span></a>
                 <div class="dropdown-menu dropdown-menu-right">
-                <a href="#" class="dropdown-item"><i class="icon-lock4"></i> Change Password</a>
+                {{-- <a href="#" class="dropdown-item"><i class="icon-lock4"></i> Change Password</a> --}}
                 
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="{{ route('logout') }}"onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="icon-power3"></i> Logout</a>
@@ -187,6 +187,9 @@
     <script src="{{asset('https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js')}}" type="text/javascript"></script>
     
     <script src="{{asset('https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js')}}" type="text/javascript"></script>
+
+    {{-- ChartJs --}}
+    <script src="https://unpkg.com/chart.js/dist/Chart.min.js"></script>
 
     {{-- AMCharts --}}
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
