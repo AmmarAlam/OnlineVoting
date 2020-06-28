@@ -85,8 +85,7 @@
               <div class="col-xl-12 col-lg-12">
                   <div class="card">
                     {{-- <div id="chartdiv"></div> --}}
-                    {!! $chart->container() !!}
-                    {!! $chart->script() !!}
+
                   </div>
               </div>
           </div>
