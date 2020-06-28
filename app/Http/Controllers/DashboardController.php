@@ -19,14 +19,14 @@ class DashboardController extends Controller
 
         // Charts
         // $chart = DB::table('votes')->select('id')->get()->dd();
-        $resultByElection = DB::table('candidates')
-        ->join('elections', 'elections.id', '=', 'candidates.election_id')
-        ->join('votes', 'candidates.id', '=', 'votes.candidate_id')
-        ->pluck('candidates.name', 'votes.candidate_id')
-                // DB::raw('COUNT(votes.candidate_id) as totalVotes'
-        ->where('elections.id', 17)
-        ->groupBy('candidates.name')
-        ->get();
+//         $resultByElection = DB::table('candidates')
+//         ->join('elections', 'elections.id', '=', 'candidates.election_id')
+//         ->join('votes', 'candidates.id', '=', 'votes.candidate_id')
+//         ->pluck('candidates.name', 'votes.candidate_id')
+//                 // DB::raw('COUNT(votes.candidate_id) as totalVotes'
+//         ->where('elections.id', 17)
+//         ->groupBy('candidates.name')
+//         ->get();
 
         // $label = [];
         // $dataset = [];
@@ -40,6 +40,6 @@ class DashboardController extends Controller
         // $chart->labels();
         // $chart->dataset('Candidates', 'bar', );
 
-        return view('admin.dashboard.index', compact('chart','elections','candidates','voters', 'results'));
+        return view('admin.dashboard.index', compact('elections','candidates','voters', 'results'));
     }
 }
